@@ -5,7 +5,7 @@ header {
 
 hgroup {
     color: rgb(252, 4, 4);
-    margin-left: 100px;
+    margin-left: 10%;
 }
 header div{
     display: flex;
@@ -41,7 +41,7 @@ section h3{
     padding-left: 35px;
 
 }
-section h3::after{
+section h3::before{
     content: '';
     width: 25px;
     height: 25px;
@@ -49,8 +49,7 @@ section h3::after{
     display: block;
     border-radius: 50%;
     position: absolute;
-    top: 10px;
-    left: 2px;
+    left: 5px;
 }
 .contact-type {
     color: white;
@@ -110,9 +109,9 @@ section h3::after{
 
 div.skill{
     background-color: rgb(163, 161, 161);
-    margin: 3px;
-    padding: 3px;
-    height: 1.5rem;
+    margin: 6px;
+    padding: 7px;
+    
 }
 
 .skills-primary, .skills-secondary{
@@ -186,4 +185,32 @@ div.skill{
 }
 .contact-value a{
     text-decoration: none;
+}
+@media screen and (max-width: 992px) {
+    section{
+        width: 100%;
+    }
+    #contact {
+        position: inherit;
+    }
+    header div{
+        display: block;
+    }
+    .contacts dl{
+        color: rgb(0, 0, 0);
+    }
+    .content{
+        display: block;
+    
+    }
+    
+    #contact h3{
+        display: block;
+    }
+    #contact h3::before {  
+        left: 34px;
+    }
+    .contacts {
+        background-color: transparent;
+    }
 }
