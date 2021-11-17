@@ -1,0 +1,156 @@
+body{
+    padding: 50px 10%;
+}
+/* la nrawe7 l jelme display none */
+hgroup h2{
+display: none;
+}
+hgroup h1{
+    border-bottom: 1px solid grey;
+    padding: 20px 0;
+}
+ /* transform rotate la nebrom l soura 3a kefna */
+figure img {
+    position: absolute;
+    right: 250px;
+    top: 90px;
+    width: 150px;
+    transform: rotate(345deg);
+}
+#about h3{
+    display: none;
+}
+#about{
+    width: 70%;
+    color: rgb(184, 179, 179);
+    font-style: italic;
+    padding-bottom: 100px;
+    display: block;
+}
+/* display grid =la n3arfa bl grid
+grid-template-columns lal toul
+"" """"""""" rows lal 3ard
+grid-row= betsir bte5od l row li ne7na men7adedou
+grid gap = fara8 ben l 5annet */
+section{
+    display: grid;
+    grid-template-columns: 125px auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    margin: 30px 0;
+}
+section h3{
+    grid-row: 1/3;
+    border-right: 1px solid black;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: bold;
+    font-style: italic;
+}
+.skills{
+    display: flex;
+}
+.skill{
+    margin: 10px;
+    background-color: #008080;
+    color: white;
+    padding: 5px;
+    width: 150px;
+}
+/* float right birou7ou 3ala jihet l right */
+.skill[data-skill="1"]::after,.skill[data-skill="2"]::after{
+    content: "★";
+    float: right;
+
+}
+.skill[data-skill="3"]::after,.skill[data-skill="4"]::after{
+    content: "★★";
+    float: right;
+
+}
+.skill[data-skill="5"]::after,.skill[data-skill="6"]::after{
+    content: "★★★";
+    float: right;
+
+}
+.skill[data-skill="7"]::after,.skill[data-skill="8"]::after{
+    content: "★★★★";
+    float: right;
+
+}
+.skill[data-skill="9"]::after,.skill[data-skill="10"]::after{
+    content: "★★★★★";
+    float: right;
+}
+.experience-institution {
+    display: none;
+}
+.experience-type{
+    color: #008080;
+}
+.experience-details{
+    color: #b8c7c7;
+    text-align: right;
+}
+.experience-date-separator{
+    color: #008080;
+}
+.experience{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+.experience-description{
+    grid-column: 1/3;
+}
+#contact h3{
+    display: none;
+}
+dt{
+    display: none;
+}
+dd{
+    display: none;
+}
+/* ../ path enou ana 3am 3ayet la soura bi malaff mn barra */
+.contact-email{
+    background-image: url(../images/email.png);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+
+}
+.contact-phone{
+    background-image: url(../images/phone.png);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.contact-github{
+    background-image: url(../images/github.png);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.contact-facebook{
+    background-image: url(../images/facebook.png);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    
+
+}
+#contact{
+    display: block;
+}
