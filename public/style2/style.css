@@ -91,6 +91,7 @@ section h3{
 .experience-details{
     color: #b8c7c7;
     text-align: right;
+    padding: 20px 0;
 }
 .experience-date-separator{
     color: #008080;
@@ -148,9 +149,31 @@ dd{
 .contacts{
     display: flex;
     justify-content: center;
-    
-
+    flex-wrap: wrap;
 }
 #contact{
     display: block;
+}
+
+@media screen and (max-width: 992px) {
+    figure img {
+        display: none;
+    }
+    section{
+        display: block;
+    }
+    section h3{
+        border: 0px;
+    }
+    section h3::after{
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: black;
+        display: block;
+    }
+    #about {
+        width: 100%;
+      
+    }
 }
