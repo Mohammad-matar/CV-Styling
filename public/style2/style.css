@@ -1,7 +1,6 @@
 body{
     padding: 50px 10%;
 }
-/* la nrawe7 l jelme display none */
 hgroup h2{
 display: none;
 }
@@ -9,7 +8,6 @@ hgroup h1{
     border-bottom: 1px solid grey;
     padding: 20px 0;
 }
- /* transform rotate la nebrom l soura 3a kefna */
 figure img {
     position: absolute;
     right: 250px;
@@ -27,11 +25,7 @@ figure img {
     padding-bottom: 100px;
     display: block;
 }
-/* display grid =la n3arfa bl grid
-grid-template-columns lal toul
-"" """"""""" rows lal 3ard
-grid-row= betsir bte5od l row li ne7na men7adedou
-grid gap = fara8 ben l 5annet */
+
 section{
     display: grid;
     grid-template-columns: 125px auto;
@@ -57,7 +51,6 @@ section h3{
     padding: 5px;
     width: 150px;
 }
-/* float right birou7ou 3ala jihet l right */
 .skill[data-skill="1"]::after,.skill[data-skill="2"]::after{
     content: "★";
     float: right;
@@ -113,7 +106,6 @@ dt{
 dd{
     display: none;
 }
-/* ../ path enou ana 3am 3ayet la soura bi malaff mn barra */
 .contact-email{
     background-image: url(../images/email.png);
     width: 100px;
